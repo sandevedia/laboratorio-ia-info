@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cómo laboratorio-ia utiliza los datos de Zimbra, Google Tasks y Gmail en su automatización personal.">
+  <title>Privacidad · laboratorio-ia</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="index.html">laboratorio-ia</a>
+      <nav aria-label="Navegación principal">
+        <a href="index.html">La aplicación</a>
+        <a href="privacidad.html" aria-current="page">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="wrap details">
+    <p class="eyebrow">Información sobre los datos</p>
+    <h1>Política de privacidad</h1>
+    <p class="date">Versión del <time datetime="2026-10-20">20 de octubre de 2026</time></p>
+    <p class="lead">Esta política describe el tratamiento de datos en laboratorio-ia, una automatización personal de Zimbra, Google Tasks y Gmail administrada por su titular.</p>
+    <section>
+      <h2>1. Datos que utiliza</h2>
+      <p>El flujo consulta los mensajes de Zimbra que cumplen la búsqueda configurada, inicialmente los mensajes sin leer. Procesa su asunto, cuerpo, remitente, fecha e identificador para preparar tareas en Google Tasks.</p>
+      <p>El asunto se utiliza como título de la tarea. Las notas de la tarea pueden incluir el contenido del correo, el remitente, la fecha y su identificador, junto con una marca que permite reconocerlo en futuras ejecuciones.</p>
+      <p>Para evitar tareas repetidas, el flujo consulta las tareas existentes de la lista de destino y sus notas. Para avisar de una tarea nueva, envía por Gmail su título, el enlace si está disponible y el identificador del correo de origen.</p>
+    </section>
+    <section>
+      <h2>2. Permisos de Google y su finalidad</h2>
+      <h3>Google Tasks</h3>
+      <p>El permiso <code>https://www.googleapis.com/auth/tasks</code> permite ver, crear, editar, organizar y eliminar tareas de la cuenta autorizada. La automatización utiliza este acceso para encontrar la lista ZIMBRA-CIBA, consultar tareas existentes, reconocer correos ya procesados y crear tareas nuevas.</p>
+      <h3>Envío de Gmail</h3>
+      <p>El permiso <code>https://www.googleapis.com/auth/gmail.send</code> se utiliza para enviar avisos desde la cuenta autorizada a esa misma cuenta. Este permiso no concede acceso para leer los mensajes de la bandeja de Gmail.</p>
+      <p>Google muestra estos permisos al titular de la cuenta antes de la autorización. Las credenciales de conexión no se introducen en estas páginas informativas.</p>
+    </section>
+    <section>
+      <h2>3. Dónde se procesan y guardan los datos</h2>
+      <p>La automatización se ejecuta en el servidor privado de n8n administrado por su titular. Los tokens de autorización de Google y las credenciales necesarias para la conexión se guardan en esa instalación. n8n cifra las credenciales que almacena mediante su configuración de cifrado.</p>
+      <p>Google procesa y almacena las tareas creadas y los mensajes de aviso enviados. El servicio de Zimbra procesa los correos de origen. Cada servicio aplica sus propias condiciones y políticas a los datos que recibe.</p>
+      <p>La instalación de n8n puede conservar datos de las ejecuciones, resultados y registros según la configuración de su titular. Su conservación y la de las copias de respaldo dependen de esa configuración; esta política no establece un plazo único.</p>
+    </section>
+    <section>
+      <h2>4. Uso personal y páginas informativas</h2>
+      <p>Los datos se utilizan para la organización del correo y las tareas del titular. Esta aplicación personal no tiene registro público de usuarios ni se utiliza para publicidad.</p>
+      <p>Estas páginas estáticas no incluyen formularios, cookies propias, analítica, anuncios ni scripts de seguimiento. El proveedor que aloje las páginas puede gestionar registros técnicos de acceso según su propio servicio.</p>
+    </section>
+    <section>
+      <h2>5. Cómo detener el acceso y eliminar datos</h2>
+      <p>El titular puede detener el flujo en n8n y revocar el acceso de laboratorio-ia desde las conexiones de su cuenta de Google. También puede eliminar la credencial correspondiente en n8n para retirar la conexión guardada.</p>
+      <p>Revocar el acceso no elimina las tareas ni los mensajes creados previamente. Para borrarlos, hay que hacerlo en Google Tasks y Gmail. Los correos de origen se gestionan en Zimbra; los datos de ejecución y las copias de respaldo de n8n se gestionan en la instalación del titular.</p>
+    </section>
+    <section>
+      <h2>6. Contacto y cambios</h2>
+      <p>Para consultas sobre esta política o sobre el tratamiento de datos de la aplicación, escribí a <a href="mailto:salarcondev@gmail.com">salarcondev@gmail.com</a>.</p>
+      <p>Si cambia el funcionamiento o el tratamiento de datos, esta página se actualizará con una nueva fecha de versión.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap bottom"><p><a href="index.html">laboratorio-ia</a> · Uso personal</p><p><a href="terminos.html">Términos de uso</a></p></div>
+  </footer>
+</body>
+</html>

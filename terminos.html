@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Funcionamiento y condiciones de uso personal de laboratorio-ia, una automatización de correo y tareas.">
+  <title>Términos de uso · laboratorio-ia</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="index.html">laboratorio-ia</a>
+      <nav aria-label="Navegación principal">
+        <a href="index.html">La aplicación</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html" aria-current="page">Términos</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="wrap details">
+    <p class="eyebrow">Funcionamiento y uso</p>
+    <h1>Términos de uso</h1>
+    <p class="date">Versión del <time datetime="2026-10-20">20 de octubre de 2026</time></p>
+    <p class="lead">laboratorio-ia es una herramienta personal administrada por su titular para organizar correo de Zimbra mediante Google Tasks y avisos de Gmail.</p>
+    <section>
+      <h2>Uso previsto</h2>
+      <p>La instalación está destinada a las cuentas que su titular configure y autorice. No ofrece altas públicas, planes de suscripción ni funciones de publicación de correo. Estas páginas son informativas y no permiten iniciar sesión en la automatización.</p>
+      <p>La conexión a Google se autoriza mediante su pantalla de consentimiento. El titular administra la configuración, las credenciales y la ejecución del flujo en su instalación privada de n8n.</p>
+    </section>
+    <section>
+      <h2>Resultados del flujo</h2>
+      <p>El flujo obtiene los correos que cumplen la búsqueda configurada, consulta las tareas existentes y crea una tarea por mensaje pendiente de procesar. Después de la creación de una tarea nueva, intenta enviar un aviso por Gmail a la cuenta configurada.</p>
+      <p>Las notas de Google Tasks tienen un límite de longitud. Un correo extenso puede guardarse recortado, con una indicación dentro de la tarea. El mensaje original continúa disponible en Zimbra.</p>
+      <p>La identificación de tareas ya procesadas depende de las marcas guardadas en sus notas. Eliminar o modificar esas marcas, o ejecutar procesos simultáneos, puede alterar el reconocimiento de duplicados.</p>
+    </section>
+    <section>
+      <h2>Disponibilidad y revisión</h2>
+      <p>El funcionamiento depende del servidor de n8n, de sus conexiones y de la disponibilidad y los permisos de Google y Zimbra. Una interrupción o un permiso vencido puede detener la creación de tareas o el envío de avisos.</p>
+      <p>Los resultados y los fallos se revisan en el historial de ejecución de n8n y en los servicios de destino. Si una tarea se creó y su aviso falló, las siguientes ejecuciones pueden reconocer la tarea existente sin reenviar el aviso automáticamente.</p>
+      <p>La aceptación de un mensaje por Gmail no garantiza una notificación en el dispositivo del titular: también intervienen sus ajustes de correo y notificaciones.</p>
+    </section>
+    <section>
+      <h2>Datos y control de la conexión</h2>
+      <p>La <a href="privacidad.html">política de privacidad</a> explica qué datos utiliza el flujo y cómo se gestionan las conexiones y los resultados. El titular puede detener la automatización y revocar la autorización de Google en cualquier momento. La revocación no borra los datos creados previamente.</p>
+    </section>
+    <section>
+      <h2>Contacto y actualizaciones</h2>
+      <p>Para consultas o soporte sobre esta instalación: <a href="mailto:salarcondev@gmail.com">salarcondev@gmail.com</a>.</p>
+      <p>Estas condiciones describen el funcionamiento de la versión indicada. Se actualizarán si cambia el alcance de la herramienta.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap bottom"><p><a href="index.html">laboratorio-ia</a> · Uso personal</p><p><a href="privacidad.html">Política de privacidad</a></p></div>
+  </footer>
+</body>
+</html>
